@@ -1,6 +1,6 @@
 backend:
     name: github
-    repo: RogerTerrazas/gatsby-starter
+    repo: RogerTerrazas/personalWebsite
     branch: main
   
 media_folder: static/img
