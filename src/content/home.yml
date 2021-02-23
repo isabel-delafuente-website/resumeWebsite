@@ -1,11 +1,7 @@
 title: Roger Terrazas
 photo: /img/profilepic.jpg
-about: I am a 3rd year Electrical and Computer Engineering major at The
-  University of Texas at Austin seeking an internship or extended training
-  opportunity in web application or software development in general. I currently
-  work as a student technology assistant to help develop and update UT’s online
-  lecture streaming services. I also hold the position of secretary for The
-  Society of Hispanic Professional Engineers-UT Chapter.
+about: I am a 4th year Electrical and Computer Engineering major at The
+  University of Texas at Austin.
 contact: Roger Terrazas P.O. Box 311 Somerset Texas, 78069 210-501-6127
   roger.terrazas@utexas.edu
 twitter: "null"
@@ -20,13 +16,30 @@ education:
     content: "My academic and personal projects reflect my interest in software
       development and commitment to pursuing software engineering as a primary
       technical core. I have taken courses pertaining to the following technical
-      disciplines: Electrical Engineering, Software Engineering, Embedded
-      Systems, Circuit Theory, and Linear Systems and Signals."
+      disciplines: Software Engineering, Operating Systems, Data Science,
+      Algorithms, Embedded Systems, and Circuit Theory"
 work:
+  - name: USAA Software Internship
+    sub: Back-End Java Developer
+    content: Worked within Contact Routing Operations to create an enterprise level
+      Java application that collected data from specific incoming calls to USAA.
+      Worked with technologies such as Swagger API development, Kafka, Gradle,
+      GitLab CI/CD, Junit, Postman, Mockito and Jacoco.
+    date: Summer 2020
+  - name: UT-Engineers Week Web Application
+    sub: Front-End Lead
+    date: April 2019 - Present
+    content: Since the Summer of 2019, I have been a part of the Engineers Week
+      website development team at UT. E-Week is a nationwide event that
+      celebrates engineers and their contributions to the world. At UT, over
+      1000 students celebrate by participating in a week long competition. As a
+      front-end lead, I manage a team of engineers to develop an interface using
+      ReactJS/Redux to display and capture user data in an easily accessible
+      manner for over 1000 participants.
   - name: The Society of Hispanic Professional Engineers (SHPE)
     sub: Secretary
     date: May 2019 - Present
-    content: I currently hold the position of secretary for The Society of Hispanic
+    content: "I currently hold the position of secretary for The Society of Hispanic
       Professional Engineers UT Chapter, but I have been involved in this
       organization since the start of my sophomore year. I previously held the
       position of Media Director during the Spring 2019 semester. As media
@@ -34,22 +47,23 @@ work:
       social media platforms, website, and newsletter. Currently as Secretary, I
       am in charge of organizing all of SHPE-UT’s file system, reporting member
       statistics to our national board, and managing three of our chair
-      officers. However, the reason I am a leader in SHPE is because I enjoy
-      serving my community of engineers at UT in any way I can. SHPE empowers me
-      to help students who are struggling either emotionally or academically by
-      connecting them to a network of others who are willing to be there for
-      each other in times of need.
+      officers. "
   - name: LAITS Student Technology Assistant
     sub: Project Management Student Technology Assistant
-    date: August 2017 - Present
-    content: I work within the UT College of Liberal Arts Instructional Technology
+    date: August 2017 - May 2020
+    content: I worked within the UT College of Liberal Arts Instructional Technology
       Services department to assist project managers with organizing and editing
-      recorded educational content for future publishing. I have held this
-      position throughout college. Although my work does not involve any of the
-      technical aspects of software development, the environment that I work in
-      has helped teach me management skills through overseeing the creation and
-      assignments of large scale projects.
+      recorded educational content for future publishing. Although my work does
+      not involve any of the technical aspects of software development, the
+      environment that I work in has helped teach me management skills through
+      overseeing the creation and assignments of large scale projects.
 skills:
+  - name: Java
+    rank: "8"
+  - name: Python
+    rank: "7"
+  - name: JavaScript
+    rank: "8"
   - name: C
     rank: "8"
   - name: C++
