@@ -1,0 +1,62 @@
+title: Roger Terrazas
+photo: /img/profilepic.jpg
+about: I am a 3rd year Electrical and Computer Engineering major at The
+  University of Texas at Austin seeking an internship or extended training
+  opportunity in web application or software development in general. I currently
+  work as a student technology assistant to help develop and update UT’s online
+  lecture streaming services. I also hold the position of secretary for The
+  Society of Hispanic Professional Engineers-UT Chapter.
+contact: Roger Terrazas P.O. Box 311 Somerset Texas, 78069 210-501-6127
+  roger.terrazas@utexas.edu
+twitter: "null"
+facebook: https://www.facebook.com/roger.a.terrazas
+linkedin: http://www.linkedin.com/in/rogerterrazas/
+github: https://github.com/RogerTerrazas
+resume: https://drive.google.com/file/d/1UxogQHqsgikedJ5jm-Bu2ZJGViYjPkMV/view
+education:
+  - name: The University of Texas at Austin
+    sub: B.S. in Electrical and Computer Engineering
+    date: May 2021
+    content: "My academic and personal projects reflect my interest in software
+      development and commitment to pursuing software engineering as a primary
+      technical core. I have taken courses pertaining to the following technical
+      disciplines: Electrical Engineering, Software Engineering, Embedded
+      Systems, Circuit Theory, and Linear Systems and Signals."
+work:
+  - name: The Society of Hispanic Professional Engineers (SHPE)
+    sub: Secretary
+    date: May 2019 - Present
+    content: I currently hold the position of secretary for The Society of Hispanic
+      Professional Engineers UT Chapter, but I have been involved in this
+      organization since the start of my sophomore year. I previously held the
+      position of Media Director during the Spring 2019 semester. As media
+      director I oversaw a committee of members to market SHPE UT through our
+      social media platforms, website, and newsletter. Currently as Secretary, I
+      am in charge of organizing all of SHPE-UT’s file system, reporting member
+      statistics to our national board, and managing three of our chair
+      officers. However, the reason I am a leader in SHPE is because I enjoy
+      serving my community of engineers at UT in any way I can. SHPE empowers me
+      to help students who are struggling either emotionally or academically by
+      connecting them to a network of others who are willing to be there for
+      each other in times of need.
+  - name: LAITS Student Technology Assistant
+    sub: Project Management Student Technology Assistant
+    date: August 2017 - Present
+    content: I work within the UT College of Liberal Arts Instructional Technology
+      Services department to assist project managers with organizing and editing
+      recorded educational content for future publishing. I have held this
+      position throughout college. Although my work does not involve any of the
+      technical aspects of software development, the environment that I work in
+      has helped teach me management skills through overseeing the creation and
+      assignments of large scale projects.
+skills:
+  - name: C
+    rank: "8"
+  - name: C++
+    rank: "7"
+  - name: REACTJS
+    rank: "8"
+  - name: HTML
+    rank: "9"
+  - name: CSS
+    rank: "8"

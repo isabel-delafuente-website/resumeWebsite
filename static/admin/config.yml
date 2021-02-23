@@ -1,0 +1,63 @@
+backend:
+    name: github
+    repo: RogerTerrazas/gatsby-starter
+    branch: main
+  
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/content/home.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Profile Image, name: photo, widget: image}
+          - {label: About Me, name: about, widget: string}
+          - {label: Contact Details, name: contact, widget: string}
+          - {label: Twitter, name: twitter, widget: string}
+          - {label: Facebook, name: facebook, widget: string}
+          - {label: LinkedIn, name: linkedin, widget: string}
+          - {label: GitHub, name: github, widget: string}
+          - {label: Resume, name: resume, widget: string}
+          - label: Education
+            name: education
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Sub, name: sub, widget: string}
+              - {label: Date, name: date, widget: string}
+              - {label: Content, name: content, widget: string}
+            
+          - label: Work
+            name: work
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Sub, name: sub, widget: string}
+              - {label: Date, name: date, widget: string}
+              - {label: Content, name: content, widget: string}
+          - label: Skills
+            name: skills
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Rank, name: rank, widget: string}
+
+
+      - label: "About Page"
+        name: "about"
+        file: "src/content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}

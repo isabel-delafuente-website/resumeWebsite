@@ -1,0 +1,43 @@
+/*colors*/
+.c1 {
+    background-color: #fdd835;
+}
+
+.c1-light {
+    background-color: #ffff6b;
+}
+
+.c2 {
+    background-color: #304ffe;
+    color: white;
+}
+
+.c2-dark {
+    background-color: #0026ca;
+    color: black;
+}
+
+.c3-dark {
+    background-color: #E1E2E1
+}
+
+.c4-light {
+    background-color: #F5F5F6
+}
+
+.root {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home .header {
+    justify-content: center!important;
+    align-items: center!important;
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+.home .header .links{
+    justify-content: center!important;
+    align-items: center!important;
+}
