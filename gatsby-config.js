@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Gatsby Starter`,
+    title: `Personal Website`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
