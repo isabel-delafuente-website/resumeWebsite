@@ -1,10 +1,15 @@
 /*colors*/
 .c1 {
-    background-color: #fdd835;
+    background-color: #1565c0;
+    color: white;
 }
 
 .c1-light {
-    background-color: #ffff6b;
+    background-color: #5e92f3;
+}
+
+.c1-dark {
+    background-color: #003c8f;
 }
 
 .c2 {
@@ -26,23 +31,61 @@
     background-color: #F5F5F6
 }
 
+body {
+    margin: 0!important;
+}
+
 .root {
     color: black;
     font-family: 'Roboto', sans-serif;
 }
 
+.MuiContainer-root {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    box-shadow:-20px 20px 100px #b1bfca;  
+}
+
 .home .header {
     justify-content: center!important;
     align-items: center!important;
-    padding-bottom: 1vh;
+    text-align: center;
 }
 
 .home .header .links{
-    justify-content: left!important;
+    justify-content: center!important;
     align-items: center!important;
+    background-color: #FFF;
+    padding-top: 1%;
+
+}
+
+.home  .resume-body{
+    justify-content: center!important;
+    align-items: center!important;
+    padding-bottom: 1%;
+}
+
+.home  .resume-body .MuiPaper-root{
+    padding: 1vh;
+    margin-top: 2vh;
 }
 
 .icon {
     font-size: 2.5rem !important;
-    color: black;
+    color: darkgray;
+}
+
+img {
+    position: absolute; 
+    top: 7px;
+    margin-left: 30px;
+
+    border: 2px solid white;
+}
+
+@media (max-width: 800px) {
+    img {
+        display: none;
+    }
 }
