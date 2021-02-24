@@ -17,11 +17,12 @@
     color: black;
 }
 
+
 .c3-dark {
     background-color: #E1E2E1
 }
 
-.c4-light {
+.c3-light {
     background-color: #F5F5F6
 }
 
@@ -33,11 +34,15 @@
 .home .header {
     justify-content: center!important;
     align-items: center!important;
-    text-align: center;
     padding-bottom: 1vh;
 }
 
 .home .header .links{
-    justify-content: center!important;
+    justify-content: left!important;
     align-items: center!important;
+}
+
+.icon {
+    font-size: 2.5rem !important;
+    color: black;
 }
