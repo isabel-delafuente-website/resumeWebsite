@@ -47,9 +47,9 @@ export default function Home({ data }) {
         </Grid>
       </Grid>
       <Grid container item className={classes.resumeBody} justify="center">
-        <Grid container item xs={12} className={classes.row} spacing={1} justify="center">
+        <Grid container item xs={12} className={classes.row} spacing={1} justify="center" style={{margin: 0}}>
           <Grid container item  xs={12} md={8} classname={classes.item} spacing={1}>
-            <Grid item  xs={12} >
+            <Grid item  xs={12}>
                 <PaperWrapper>
                   <div>
                     <Grid container  justify="left" alignItems="center">
