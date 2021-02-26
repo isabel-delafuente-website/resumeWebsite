@@ -1,7 +1,9 @@
 title: Roger Terrazas
 photo: /img/profilepic.jpg
-about: I am a 4th year Electrical and Computer Engineering major at The
-  University of Texas at Austin.
+about: I am a 4th year electrical and computer engineering major at The
+  University of Texas at Austin. My professional career as a Software Engineer
+  will begin USAA in the Summer of 2021. Please feel to reach out to get to know
+  me.
 email: roger.terrazas@utexas.edu
 address: P.O. Box 311, Somerset, Texas 78069
 phone: 210-501-6127
@@ -71,6 +73,8 @@ skills:
     rank: "7"
   - name: REACTJS
     rank: "8"
+  - name: GatsbyJS
+    rank: "4"
   - name: HTML
     rank: "9"
   - name: CSS
