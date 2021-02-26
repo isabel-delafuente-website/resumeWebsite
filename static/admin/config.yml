@@ -17,7 +17,9 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Profile Image, name: photo, widget: image}
           - {label: About Me, name: about, widget: string}
-          - {label: Contact Details, name: contact, widget: string}
+          - {label: Email, name: email, widget: string}
+          - {label: Address, name: address, widget: string}
+          - {label: Phone, name: phone, widget: string}
           - {label: Twitter, name: twitter, widget: string}
           - {label: Facebook, name: facebook, widget: string}
           - {label: LinkedIn, name: linkedin, widget: string}
@@ -46,6 +48,13 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Rank, name: rank, widget: string}
+          - label: Contact
+            name: contact
+            widget: list
+            fields:
+              - {label: Email, name: email, widget: string}
+              - {label: Phone, name: phone, widget: string}
+              - {label: Address, name: address, widget: string}
 
 
       - label: "About Page"

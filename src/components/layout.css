@@ -40,12 +40,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.MuiContainer-root {
-    padding-left: 0!important;
-    padding-right: 0!important;
-    box-shadow:-20px 20px 100px #b1bfca;  
-}
-
 .home .header {
     justify-content: center!important;
     align-items: center!important;
@@ -55,31 +49,29 @@ body {
 .home .header .links{
     justify-content: center!important;
     align-items: center!important;
-    background-color: #FFF;
-    padding-top: 1%;
 
 }
 
 .home  .resume-body{
     justify-content: center!important;
     align-items: center!important;
-    padding-bottom: 1%;
 }
 
-.home  .resume-body .MuiPaper-root{
-    padding: 1vh;
-    margin-top: 2vh;
+.home  .resume-body .row{
+    justify-content: center!important;
+    align-items: center!important;
 }
 
 .icon {
     font-size: 2.5rem !important;
-    color: darkgray;
+    color: white;
 }
+
 
 img {
     position: absolute; 
-    top: 7px;
-    margin-left: 30px;
+    top: 0px;
+    margin-left: 15px;
 
     border: 2px solid white;
 }
