@@ -5,9 +5,12 @@ export const useStyle = makeStyles((theme) => ({
         backgroundColor: "#F5F5F6",
         boxShadow: "-20px 20px 100px #b1bfca",
         flexGrow: 1,
+        paddingLeft: 0,
+        paddingRight: 0,
+        paddingBottom: theme.spacing(1)
     },
     header : {
-        backgroundColor: "#304ffe",
+        backgroundColor: "#26c6da",
         textAlign: "center",
         color: "white",
         width: "100%",
@@ -31,4 +34,6 @@ export const useStyle = makeStyles((theme) => ({
     innerPaper: {
         padding: theme.spacing(1)
     }
+
+
   }));

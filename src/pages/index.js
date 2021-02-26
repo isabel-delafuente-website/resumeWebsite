@@ -3,9 +3,15 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Grid } from "@material-ui/core";
 import PaperWrapper from "../components/paperWrapper";
+
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
+import PersonIcon from '@material-ui/icons/Person';
+import WorkIcon from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
+import ComputerIcon from '@material-ui/icons/Computer';
+import RecentActorsIcon from '@material-ui/icons/RecentActors';
 
 import {useStyle} from "../components/styles.js"
 
@@ -18,7 +24,7 @@ export default function Home({ data }) {
     <div className="home">
       <img src={content.photo} alt="profile" width="120" height="120"/>
       <Grid container justify="center">
-      <Grid item container spacing={0} className={classes.header} justify="center"> 
+      <Grid item container spacing={1} className={classes.header} justify="center"> 
         <Grid item xs={12} justify="center">
           <h1>{content.title}</h1>
         </Grid>
@@ -46,19 +52,34 @@ export default function Home({ data }) {
             <Grid item  xs={12} >
                 <PaperWrapper>
                   <div>
-                  <h2>About Me</h2>
-                  <p>{content.about}</p>
+                    <Grid container  justify="left" alignItems="center">
+                      <Grid item xs={2} md={1}>
+                        <PersonIcon className="icon-body"/> 
+                      </Grid>
+                      <Grid item xs={10} md={11}>
+                      <h2>About Me</h2>
+                      </Grid>
+                    </Grid>
+                    <p>{content.about}</p>
                   </div>
                 </PaperWrapper>
             </Grid>
             <Grid item xs={12} classname={classes.item}>
               <PaperWrapper>
-                <h2>Work</h2>
+                <Grid container justify="left" alignItems="center">
+                  <Grid item xs={2} md={1}>
+                      <WorkIcon className="icon-body"/> 
+                  </Grid>
+                  <Grid item xs={10} md={11}>
+                    <h2>Work</h2>
+                  </Grid>
+                </Grid>
                 {content.work.map((job, index) => (
                   <div>
                   <h3>{job.name}</h3>
                   <h4><i>{job.sub}</i> • {job.date}</h4>
                   <p>{job.content}</p>
+                  <br/>
                   </div>
                 ))}
               </PaperWrapper>
@@ -67,19 +88,34 @@ export default function Home({ data }) {
           <Grid container item  xs={12} md={4} spacing={1} classname={classes.item} alignItems="stretch">
             <Grid item xs={12} className="education" alignItems="stretch">
               <PaperWrapper>
-                <h2>Education</h2>
+                <Grid container justify="left" alignItems="center">
+                  <Grid item xs={2} md={2}>
+                      <SchoolIcon className="icon-body" style={{marginRight: "10px"}}/> 
+                  </Grid>
+                  <Grid item xs={10} md={8}>
+                    <h2>Education</h2>
+                  </Grid>
+                </Grid>
                 {content.education.map((school, index) => (
                   <div>
                   <h3>{school.name}</h3>
                   <h4><i>{school.sub}</i> • {school.date}</h4>
                   <p>{school.content}</p>
+                  <br/>
                   </div>
                 ))}
               </PaperWrapper>
             </Grid>
             <Grid item  xs={12} >              
               <PaperWrapper>
-                <h2>Skills</h2>
+                <Grid container justify="left" alignItems="center">
+                  <Grid item xs={2} md={2}>
+                      <SchoolIcon className="icon-body" style={{marginRight: "10px"}}/> 
+                  </Grid>
+                  <Grid item xs={10} md={8}>
+                    <h2>Skills</h2>
+                  </Grid>
+                </Grid>
                 {content.skills.map((skill, index) => (
                   <div>
                   <li>{skill.name}</li>
@@ -89,7 +125,14 @@ export default function Home({ data }) {
             </Grid>
             <Grid item className={classes.item}>
               <PaperWrapper>
-                <h2>Contact</h2>
+                <Grid container justify="left" alignItems="center">
+                  <Grid item xs={2} md={2}>
+                      <SchoolIcon className="icon-body" style={{marginRight: "10px"}}/> 
+                  </Grid>
+                  <Grid item xs={10} md={8}>
+                    <h2>Contact</h2>
+                  </Grid>
+                </Grid>
                 <p>{content.email}</p>
                 <p>{content.phone}</p>
                 <p>{content.address}</p>
