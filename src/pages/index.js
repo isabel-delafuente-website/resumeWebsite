@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Grid } from "@material-ui/core";
 import PaperWrapper from "../components/paperWrapper";
+import Skill from "../components/skill.js";
 
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -30,17 +31,17 @@ export default function Home({ data }) {
         </Grid>
         <Grid item container xs={12} className="links" justify="center">
           <Grid item xs={2}>
-          <a href={content.linkedin}>
+          <a href={content.linkedin} target="blank">
               <LinkedInIcon className="icon"/>
             </a>
           </Grid>
           <Grid item xs={2}>
-            <a href={content.github}>
+            <a href={content.github} target="blank">
               <GitHubIcon className="icon"/>
             </a>
           </Grid>
           <Grid item xs={2}>
-            <a href={content.resume}>
+            <a href={content.resume} target="blank">
               <AttachFileIcon className="icon"/>
             </a>
           </Grid> 
@@ -110,24 +111,23 @@ export default function Home({ data }) {
               <PaperWrapper>
                 <Grid container justify="left" alignItems="center">
                   <Grid item xs={2} md={2}>
-                      <SchoolIcon className="icon-body" style={{marginRight: "10px"}}/> 
+                      <ComputerIcon className="icon-body" style={{marginRight: "10px"}}/> 
                   </Grid>
                   <Grid item xs={10} md={8}>
                     <h2>Skills</h2>
                   </Grid>
                 </Grid>
                 {content.skills.map((skill, index) => (
-                  <div>
-                  <li>{skill.name}</li>
-                  </div>
+                  <Skill skill={skill.name} rank={skill.rank}/>
                 ))}
+                <br/>
               </PaperWrapper>
             </Grid>
             <Grid item className={classes.item}>
               <PaperWrapper>
                 <Grid container justify="left" alignItems="center">
                   <Grid item xs={2} md={2}>
-                      <SchoolIcon className="icon-body" style={{marginRight: "10px"}}/> 
+                      <RecentActorsIcon className="icon-body" style={{marginRight: "10px"}}/> 
                   </Grid>
                   <Grid item xs={10} md={8}>
                     <h2>Contact</h2>

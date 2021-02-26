@@ -33,6 +33,9 @@ export const useStyle = makeStyles((theme) => ({
     },
     innerPaper: {
         padding: theme.spacing(1)
+    },
+    progress: {
+        backgroundColor: "#26c6da",
     }
 
 
