@@ -4,12 +4,8 @@ import Layout from "../components/layout"
 import { Grid, Button } from "@material-ui/core";
 import PaperWrapper from "../components/paperWrapper";
 import Skill from "../components/skill.js";
+import Icons from "../components/icons.js"
 
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import AttachFileIcon from '@material-ui/icons/AttachFile';
 import PersonIcon from '@material-ui/icons/Person';
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
@@ -22,7 +18,7 @@ export default function Home({ data }) {
   const content = data.allContentYaml.edges[0].node;
   const classes = useStyle();
 
-  return ( 
+  return (
   <Layout>
     <div className="home">
       <img src={content.photo} alt="profile" width="120" height="120"/>
@@ -31,23 +27,7 @@ export default function Home({ data }) {
         <Grid item xs={12} justify="center">
           <h1>{content.title}</h1>
         </Grid>
-        <Grid item container xs={12} className="links" justify="center">
-          <Grid item xs={2}>
-          <a href={content.linkedin} target="blank">
-              <LinkedInIcon className="icon"/>
-            </a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href={content.github} target="blank">
-              <GitHubIcon className="icon"/>
-            </a>
-          </Grid>
-          <Grid item xs={2}>
-            <a href={content.resume} target="blank">
-              <AttachFileIcon className="icon"/>
-            </a>
-          </Grid> 
-        </Grid>
+          <Icons content={content} />
       </Grid>
       <Grid container item className={classes.resumeBody} justify="center">
         <Grid container item xs={12} className={classes.row} spacing={1} justify="center" style={{margin: 0}}>
@@ -141,7 +121,7 @@ export default function Home({ data }) {
                   <p>{content.address}</p>
                   <Button href={content.resume} target="blank" variant="contained" className={classes.button}>
                     Download Resume
-                  </Button>s
+                  </Button>
                 </div>
               </PaperWrapper>
             </Grid>
@@ -164,6 +144,7 @@ export const query = graphql`
           phone
           address
           facebook
+          instagram
           id
           linkedin
           github
