@@ -1,12 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import { Grid } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import PaperWrapper from "../components/paperWrapper";
 import Skill from "../components/skill.js";
 
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
 import PersonIcon from '@material-ui/icons/Person';
 import WorkIcon from '@material-ui/icons/Work';
@@ -133,9 +135,14 @@ export default function Home({ data }) {
                     <h2>Contact</h2>
                   </Grid>
                 </Grid>
-                <p>{content.email}</p>
-                <p>{content.phone}</p>
-                <p>{content.address}</p>
+                <div className={classes.contact}>
+                  <p>{content.email}</p>
+                  <p>{content.phone}</p>
+                  <p>{content.address}</p>
+                  <Button href={content.resume} target="blank" variant="contained" className={classes.button}>
+                    Download Resume
+                  </Button>s
+                </div>
               </PaperWrapper>
             </Grid>
           </Grid>

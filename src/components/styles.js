@@ -31,11 +31,21 @@ export const useStyle = makeStyles((theme) => ({
         width: "100%",
         boxSizing: "border-box",
     },
+    button: {
+        backgroundColor: '#26c6da',
+        color: 'white',
+        fontStyle: "normal",
+        fontWeight: "bold",
+    },
     innerPaper: {
         padding: theme.spacing(1)
     },
     progress: {
         backgroundColor: "#26c6da",
+    },
+    contact: {
+        textAlign: "center",
+        fontStyle: "italic",
     }
 
 
