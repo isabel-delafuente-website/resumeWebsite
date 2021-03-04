@@ -1,8 +1,8 @@
 import React from "react"
 import {useStyle} from "./styles.js"
 
-export default function Skill({ skill, rank }) {
-  const classes = useStyle();
+export default function Skill({ skill, rank, props }) {
+  const classes = useStyle(props);
   const percent = rank*(10).toString() + "%";
   console.log("percent")
   console.log(percent)

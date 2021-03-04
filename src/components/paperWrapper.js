@@ -3,8 +3,8 @@ import { Paper } from "@material-ui/core";
 
 import {useStyle} from "./styles.js"
 
-export default function PaperWrapper({ children }) {
-  const classes = useStyle();
+export default function PaperWrapper({ children , props}) {
+  const classes = useStyle(props);
 
   return (
     <Paper className={classes.paper}>

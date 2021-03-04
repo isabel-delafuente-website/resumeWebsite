@@ -58,16 +58,16 @@ collections:
               - {label: Address, name: address, widget: string}
 
 
-      - label: "About Page"
-        name: "about"
-        file: "src/content/about.yml"
+      - label: "Styles"
+        name: "styles"
+        file: "src/content/styles.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+          - { label: 'Primary', name: 'primary', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Background', name: 'background', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Page Background', name: 'page-background', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Content Background', name: 'content-background', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Header One', name: 'header1-color', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Header Two', name: 'header2-color', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Header Three', name: 'header3-color', widget: 'color', enableAlpha: true, allowInput: true }
+          - { label: 'Header Four', name: 'header4-color', widget: 'color', enableAlpha: true, allowInput: true }
+

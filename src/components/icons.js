@@ -7,34 +7,38 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-export default function Icons({content}) {
+import {useStyle} from "../components/styles.js"
+
+export default function Icons({content, props}) {
+    const classes = useStyle(props);
+
     const iconMapping = [
         {
             'name': "facebook",
-            'component': <FacebookIcon className="icon"/>,
+            'component': <FacebookIcon className={classes.icon}/>,
             'link': content.facebook
         },
         {
             'name': "github",
-            'component': <GitHubIcon className="icon"/>,
+            'component': <GitHubIcon className={classes.icon}/>,
             'link': content.github
 
         },
         {
             'name': "linkedin",
-            'component': <LinkedInIcon className="icon"/>,
+            'component': <LinkedInIcon className={classes.icon}/>,
             'link': content.linkedin
 
         },
         {
             'name': "twitter",
-            'component': <TwitterIcon className="icon"/>,
+            'component': <TwitterIcon className={classes.icon}/>,
             'link': content.twitter
 
         },
         {
             'name': "instagram",
-            'component': <InstagramIcon className="icon"/>,
+            'component': <InstagramIcon className={classes.icon}/>,
             'link': content.instagram
         },
     ]

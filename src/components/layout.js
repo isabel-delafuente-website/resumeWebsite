@@ -5,11 +5,11 @@ import { Container } from '@material-ui/core'
 
 import {useStyle} from "../components/styles.js"
 
-export default function Layout({ children }) {
-  const classes = useStyle();
+export default function Layout({ children, props }) {
+  const classes = useStyle(props);
 
   return (
-    <div className={"root c3-ligth"}>
+    <div className={classes.root}>
       <Helmet>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
