@@ -1,6 +1,6 @@
 backend:
     name: github
-    repo: RogerTerrazas/personalWebsite
+    repo: isabel-delafuente-website/resumeWebsite
     branch: main
   
 media_folder: static/img
